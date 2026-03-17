@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Soil2Harvest</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo-nav">
+
+<img src="logo.png">
+<h2>Soil2Harvest</h2>
+
+</div>
+
+<nav>
+
+<a href="#">Home</a>
+<a href="#">Crop Recommendation</a>
+<a href="#">Fertilizer</a>
+<a href="about.html">About Us</a>
+
+</nav>
+
+</header>
+
+
+
+<section class="hero">
+
+<h1>Smart Soil. Better Crops.</h1>
+
+<p>AI powered crop and fertilizer recommendation system</p>
+
+
+<!-- Plant Growing Animation -->
+
+<div class="plant-animation">
+
+<div class="soil"></div>
+
+<div class="plant">
+
+<div class="stem"></div>
+
+<div class="leaf leaf-left"></div>
+<div class="leaf leaf-right"></div>
+
+</div>
+
+</div>
+
+
+<button class="hero-btn">Start Soil Analysis</button>
+
+</section>
+
+
+
+<!-- Soil Analysis Form -->
+
+<section class="soil-analysis">
+
+<h2>Enter Soil Details</h2>
+
+<form id="soilForm">
+
+<input type="number" id="ph" placeholder="Enter Soil pH" required>
+
+<input type="number" id="rainfall" placeholder="Enter Rainfall (mm)" required>
+
+<button type="submit">Predict Crop</button>
+
+</form>
+
+<h3>Recommended Crop: <span id="cropResult"></span></h3>
+
+<h3>Fertilizer: <span id="fertilizerResult"></span></h3>
+
+</section>
+
+
+
+<section class="features">
+
+<h2>Platform Features</h2>
+
+<div class="cards">
+
+<div class="card">
+🌾
+<h3>Crop Recommendation</h3>
+<p>Find the best crop based on soil nutrients.</p>
+</div>
+
+<div class="card">
+🧪
+<h3>Soil Analysis</h3>
+<p>Analyze soil conditions for better farming.</p>
+</div>
+
+<div class="card">
+🌱
+<h3>Fertilizer Advice</h3>
+<p>Get fertilizer suggestions instantly.</p>
+</div>
+
+<div class="card">
+🌦
+<h3>Weather Insights</h3>
+<p>Real-time weather updates for farmers.</p>
+</div>
+
+</div>
+
+</section>
+
+
+
+<footer>
+
+<p>© 2026 Soil2Harvest | Smart Farming Platform</p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

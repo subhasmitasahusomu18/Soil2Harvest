@@ -1,0 +1,247 @@
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:linear-gradient(#e8f5e9,#c8e6c9);
+}
+
+
+/* ---------------- */
+/* WELCOME PAGE */
+/* ---------------- */
+
+.welcome-container{
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+height:100vh;
+text-align:center;
+}
+
+.logo{
+width:180px;
+margin-bottom:20px;
+}
+
+.quote{
+font-style:italic;
+color:#2e7d32;
+font-size:20px;
+}
+
+.start-btn{
+margin-top:30px;
+padding:14px 32px;
+background:#2e7d32;
+color:white;
+text-decoration:none;
+border-radius:6px;
+font-size:18px;
+}
+
+
+/* ---------------- */
+/* FLOATING LEAVES */
+/* ---------------- */
+
+.leaves{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+pointer-events:none;
+}
+
+.leaves span{
+position:absolute;
+width:25px;
+height:25px;
+background:#2e7d32;
+border-radius:50% 0 50% 50%;
+animation:fall 10s linear infinite;
+}
+
+.leaves span:nth-child(1){left:10%;}
+.leaves span:nth-child(2){left:25%; animation-delay:2s;}
+.leaves span:nth-child(3){left:40%; animation-delay:4s;}
+.leaves span:nth-child(4){left:55%; animation-delay:1s;}
+.leaves span:nth-child(5){left:70%; animation-delay:3s;}
+.leaves span:nth-child(6){left:85%; animation-delay:5s;}
+.leaves span:nth-child(7){left:95%; animation-delay:6s;}
+
+@keyframes fall{
+0%{top:-10%; transform:rotate(0deg);}
+100%{top:110%; transform:rotate(360deg);}
+}
+
+
+
+/* ---------------- */
+/* NAVBAR */
+/* ---------------- */
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+background:#1b5e20;
+color:white;
+}
+
+.logo-nav{
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+.logo-nav img{
+width:40px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+}
+
+
+
+/* ---------------- */
+/* HERO */
+/* ---------------- */
+
+.hero{
+text-align:center;
+padding:120px 20px;
+}
+
+.hero h1{
+font-size:48px;
+}
+
+.hero p{
+font-size:20px;
+}
+
+.hero-btn{
+margin-top:20px;
+padding:12px 25px;
+background:#2e7d32;
+color:white;
+border:none;
+font-size:16px;
+cursor:pointer;
+}
+
+
+
+/* ---------------- */
+/* PLANT ANIMATION */
+/* ---------------- */
+
+.plant-animation{
+position:relative;
+width:150px;
+height:120px;
+margin:40px auto;
+}
+
+.soil{
+width:150px;
+height:40px;
+background:#6d4c41;
+border-radius:50%;
+position:absolute;
+bottom:0;
+}
+
+.plant{
+position:absolute;
+bottom:35px;
+left:50%;
+transform:translateX(-50%);
+}
+
+.stem{
+width:6px;
+height:0;
+background:#2e7d32;
+margin:auto;
+animation:growStem 2s forwards;
+}
+
+.leaf{
+width:28px;
+height:18px;
+background:#4caf50;
+position:absolute;
+border-radius:50%;
+opacity:0;
+}
+
+.leaf-left{
+left:-28px;
+top:20px;
+transform:rotate(-30deg);
+animation:showLeaf 1s forwards;
+animation-delay:2s;
+}
+
+.leaf-right{
+right:-28px;
+top:20px;
+transform:rotate(30deg);
+animation:showLeaf 1s forwards;
+animation-delay:2s;
+}
+
+@keyframes growStem{
+0%{height:0;}
+100%{height:70px;}
+}
+
+@keyframes showLeaf{
+0%{opacity:0; transform:scale(0);}
+100%{opacity:1; transform:scale(1);}
+}
+
+
+
+/* ---------------- */
+/* FEATURES */
+/* ---------------- */
+
+.features{
+text-align:center;
+padding:80px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:30px;
+margin-top:40px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 5px 10px rgba(0,0,0,0.1);
+}
+
+
+
+/* ---------------- */
+/* FOOTER */
+/* ---------------- */
+
+footer{
+text-align:center;
+padding:20px;
+background:#1b5e20;
+color:white;
+margin-top:40px;
+}
